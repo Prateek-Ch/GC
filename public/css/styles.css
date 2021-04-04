@@ -1,0 +1,209 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.no_footer{
+  background: #fff;
+  margin-bottom: 430px;
+  z-index: 1;
+}
+
+* {
+  border-radius: 0 !important;
+}
+.container_home{
+  background-image:url('backdrop.jpg');
+  height: 120vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.76);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  z-index: 2;
+}
+
+#navbar{
+  position: relative;
+  position:sticky;
+  transition: background 0.5s;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  
+}
+#navbar.cus-navbar{
+  background: white;
+  z-index: 999;
+}
+#navbar.cus-navbar a{
+  color:black !important;
+}
+
+nav .navbar-nav li a{
+  color: white !important;
+  }
+  .nav-item{
+  margin-right:20px;
+}
+
+.navbar-brand{
+  padding-left: 15px;
+}
+.nav-item a:hover {
+  border-bottom: 1px solid white;
+  font-weight:500;
+
+}
+
+/* Services */
+#Services{
+  margin-top: 523px;
+  padding: 0% 15%;
+  margin-bottom: 20%;
+}
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Our_Services */
+#our_services{
+  margin: auto;
+  background-color: #F7F7F7;
+  color: #141414;
+}
+
+.our_services_row{
+  padding-top: 15%;
+  padding-bottom: 7%;
+}
+.feature-box{
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 4%;
+  }
+
+  .our_services_row p{
+    color: #5F6F99;
+    font-weight: 200;
+  }
+
+/* Additional */
+.additional{
+  background-image:url('lady_justice.jpg');
+  height: 70vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: 50% 50%;
+  
+}
+.overlay_additional {
+  height: 70vh;
+  width: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.76);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Maps */
+#map{
+  height: 500px;
+  width: 100%;
+}
+
+/* Contact */
+#contact_div{
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:430px;
+  background:rgb(31, 31,31);
+  color:#fff;
+  z-index:-1;
+}
+
+.footer-business-info, .lower-footer {
+  background-color: rgb(26, 26,26);
+}
+.footer-business-info {
+    padding: 40px 20px 20px 20px;
+    margin: -70px 15px 20px 15px;
+}
+.footer-business-wrapper{
+  padding-top: 57px;
+}
+.footer-social-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  line-height: 40px;
+  margin-right: 30px;
+}
+.footer-business-info.footer-socials .footer-social-icons a {
+  background-color: #1f1f1f;
+  float: left;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.footer-business-info.footer-socials a {
+  margin-bottom: 20px;
+  color:rgb(159,143,96);
+}
+
+.footer-business-info.footer-socials a:hover {
+  color:white;
+}
+
+.footer-business-info.footer-socials .footer-social-icons a:hover{
+  background-color:rgb(159,143,96);
+}
+
+.footer-newsletter-form .wpcf7 .wpcf7-submit {
+  width: 18%;
+  height: 40px;
+  line-height: 40px;
+  border: none!important;
+  background-color:rgb(159,143,96);
+  color: white;
+}
+.footer-newsletter-form .wpcf7 .wpcf7-submit:hover {
+  background-color:white;
+  color: rgb(159,143,96);
+}
+
+
+
+/* About Us */
+#aboutus{
+         text-align: center;
+         font-weight: bold;
+         }
+|
