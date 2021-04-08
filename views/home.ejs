@@ -9,7 +9,7 @@
         <!-- CSS include -->
         <link rel="stylesheet" href="css/styles.css">
         <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,900|Ubuntu&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/ac060bbd11.js" crossorigin="anonymous"></script>
@@ -81,7 +81,7 @@
   <section id="our_services">
 
     <div class="row our_services_row">
-      <div class="col-lg-4 feature-box">
+      <div class="col-lg-4 feature-box" id="div_services">
         <h3 style="font-size: 40px;color: #cecece;line-height: 58px;text-align: center" class="vc_custom_heading">01.</h3>
         <h5>Company Registration</h5>
         <p>Deciding a apt structure is the most important step to start up a business.
@@ -172,13 +172,12 @@
 <script>
 function initMap(){
     var options = {
-      zoom:8,
-      center :{lat: 25.263 , lng: -131.044}
+      zoom:18,
+      center :{lat: 17.513791 , lng: 78.367173}
     }
-    var location = {lat: 17.513791 , lng: 78.367173};
     var map = new google.maps.Map(document.getElementById("map"),options);
     var marker = new google.maps.Marker({
-      position: location,
+      position: options.center,
       map: map
     });
   }

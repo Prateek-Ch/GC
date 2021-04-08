@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+        <!--Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- CSS include -->
+        <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+      <%- include('partials/header_two'); -%>
+
+      <h1>BLOG SECTION</h1>
+      <h3>Check out our latest Blogs!</h3>
+
+      <%  posts.forEach(function(post){ %>
+
+        <h1><%=post.title%></h1>
+        <p>
+        <%=post.content.substring(0, 100) + " ..."%>
+        <a href="blog/posts/<%=post._id%>">Read More</a>
+        </p>
+    
+    
+        <% }) %>
+    
+ 
+   <a href="/blog/compose" type="button" class="btn btn-secondary btn-lg" >Publish a blog of your own!</a>
+
+  </body>
+</html>
