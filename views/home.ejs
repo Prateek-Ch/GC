@@ -21,7 +21,8 @@
   <div class="container_home">
             <%- include('partials/header'); -%>
         <div class="overlay">
-          <h1>A Quote?A carousel?</h1>
+          <h1>Saalon itna tax bharte ho paisa time se diya karo</h1>
+          <h2>Buri Nazar waale tera mooh kaala</h2>
         </div>
 
               <!-- Services -->
@@ -134,14 +135,6 @@
   </div>
 </section>
 
-<!-- MAPS -->
-<section id = "map_insert">
-  <div id = "map">
-
-  </div>
-</section> 
-</div>
-
 <!-- Contact Us -->
 <section id = "footer">
   <div id = "contact_div"> 
@@ -156,10 +149,10 @@
         </div>
         <div class="footer-newsletter-form">
           <div role="form" class="wpcf7" id="wpcf7-f163-o1" lang="en-US" dir="ltr">
-            <form action="/etalon/lawyer/#wpcf7-f163-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+            <form action="" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
                   <input type="email" name="email" value="" class="form-control email-footer" aria-required="true" aria-invalid="false" placeholder="Email address" style="background: #1f1f1f;
                   width: 450px;height: 40px; border: none; color: white;">
-                <input type="submit" value="Subscribe" class="wpcf7-form-control wpcf7-submit" style="float: right;">
+                <input type="submit" value="Mail Us" class="wpcf7-form-control wpcf7-submit" style="float: right;">
             </div>
               </form>
             </div>
@@ -168,23 +161,6 @@
       </div>
   </div>
 </section>
-
-<script>
-function initMap(){
-    var options = {
-      zoom:18,
-      center :{lat: 17.513791 , lng: 78.367173}
-    }
-    var map = new google.maps.Map(document.getElementById("map"),options);
-    var marker = new google.maps.Marker({
-      position: options.center,
-      map: map
-    });
-  }
-</script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkVE3qPzGTvLn8MniiVah7wtPcJDayHmA&callback=initMap">
-</script>
 
 <script>
    window.addEventListener("scroll",function(){
