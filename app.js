@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+var cors = require('cors');
 
 const mongoose = require("mongoose");
 
@@ -26,7 +27,7 @@ var blog = require('./routes/blog');
 
 
 const app = express();
-
+app.use(cors());
 mongoose.connect('mongodb://localhost:27017/geeta',{ useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify:false});
 require('./config/passport')(passport);
 

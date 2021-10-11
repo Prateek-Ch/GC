@@ -110,12 +110,15 @@ nav .navbar-nav li a{
 
 /* Additional */
 .additional{
-  background-image:url('lady_justice.jpg');
   height: 70vh;
   width: 100vw;
   background-size: cover;
   background-position: 50% 50%;
   
+}
+.d-block w-100{
+  height: 70vh;
+  width: 100vw;
 }
 .overlay_additional {
   height: 70vh;
@@ -127,12 +130,6 @@ nav .navbar-nav li a{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-/* Maps */
-#map{
-  height: 500px;
-  width: 100%;
 }
 
 /* Contact */
@@ -198,5 +195,3 @@ nav .navbar-nav li a{
   background-color:white;
   color: rgb(159,143,96);
 }
-
-
